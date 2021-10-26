@@ -1,13 +1,10 @@
-const mongoose = require('mongoose')
-
-const todo = require('./todo.js')
-
-const userSchema = mongoose.Schema({
+const mongoose = require('mongoose') 
+const todoSchema = mongoose.Schema({ // 스키마 정의 
     name: { type: String, required: true, trim: true },
-    age: { type: Number, default: 0 },
+    age: { type: Number, required: true, trim: true },
     email: { type: String, required: true, trim: true },
-    todos: [todo]
-})
+    todos: { type: array, required: true, trim: true },
+}) 
 
-const users = mongoose.model('users', userSchema)
-module.exports = users;
+const User = mongoose.model('User', userSchema) // 스키마로부터 생성된 모델 객체 
+module.exports = User;
