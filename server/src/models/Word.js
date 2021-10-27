@@ -7,7 +7,7 @@ const wordSchema = mongoose.Schema({ // 스키마 정의
     r_hanja: { type: String, trim: true },
     r_des: { type: String, trim: true },
     r_pos: { type: String, trim: true }
-})
+})  
 
 //메모리 초기화
 const Word = mongoose.model('Word', wordSchema,'kor_dic_coll');

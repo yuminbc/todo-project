@@ -11,7 +11,7 @@ var corsOptions = { //cors 옵션
     credentials: true
 }
 
-
+ 
 app.use(cors(corsOptions)) // CORS 설정 
 app.use('/static',express.static(__dirname+'/public'))
 app.use(cors())

@@ -2,12 +2,12 @@ const express = require('express')
 const TodoRouter = express.Router()
 //models폴더에 있는 Todo와 관련된 코드를 들고온다.
 const Todo = require('../models/Todo')
-
+ 
 TodoRouter.route('/').get(async (req, res) => {
     const todos = await Todo.find()
     console.log(todos)
     res.json({ status: 200, todos })
-})
+}) 
 // 위아래 코드 같은 것!!!
 //TodoRouter.get('/', (req, res) => {
 //     res.send('all todo list')

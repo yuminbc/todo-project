@@ -8,7 +8,7 @@ const WordRouter = express.Router()
 // /api/word/ , /api/words/학원 //(파라미터)
 WordRouter.route('/(:word)?').get(async(req, res) => {
     let words = []
-    const {word} = req.params
+    const {word} = req.params 
     console.log(req.params.word)
     // res.send(word)
 
