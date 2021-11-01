@@ -34,11 +34,12 @@ app.use((err, req, res, next) => { //서버 내부 오류 처리
 })
 
 const CONNECT_URL = 'mongodb://localhost:27017/kor_dic_db'
-mongoose.connect(CONNECT_URL, { //Momgo DB 서버연결
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log("mongodb connected..."))
-    .catch(e => console.log(`failed to connect mongodb: ${e}`))
+// mongoose.connect(CONNECT_URL, { //Momgo DB 서버연결
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+
+// }).then(() => console.log("mongodb connected..."))
+//     .catch(e => console.log(`failed to connect mongodb: ${e}`))
 
 
 app.get('/hello', (req, res) => { //URL 응답 테스트
@@ -53,10 +54,14 @@ app.get('/hello', (req, res) => { //URL 응답 테스트
 
 
 
+//로컬호스트 서버
+// app.listen(5000, () => { //5000 포트로 서버 오픈
+//     console.log('server is running on port 5000..')
+// })
 
-app.listen(5000, () => { //5000 포트로 서버 오픈
-    console.log('server is running on port 5000..')
-})
+//서버
+
+
 // const points = [3, 4];
 // const app = {}
 // app.doubleNums = (points) => {
