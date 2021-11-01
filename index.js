@@ -33,13 +33,14 @@ app.use((err, req, res, next) => { //서버 내부 오류 처리
     res.status(500).send("something is broken on server !")
 })
 
-const CONNECT_URL = 'mongodb://localhost:27017/kor_dic_db'
-// mongoose.connect(CONNECT_URL, { //Momgo DB 서버연결
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
+// const CONNECT_URL = 'mongodb://localhost:27017/kor_dic_db'
+const CONNECT_URL='mongodb+srv://lee:1234@cluster0.wkp9e.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
+mongoose.connect(CONNECT_URL, { //Momgo DB 서버연결
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 
-// }).then(() => console.log("mongodb connected..."))
-//     .catch(e => console.log(`failed to connect mongodb: ${e}`))
+}).then(() => console.log("mongodb connected..."))
+    .catch(e => console.log(`failed to connect mongodb: ${e}`))
 
 
 app.get('/hello', (req, res) => { //URL 응답 테스트
