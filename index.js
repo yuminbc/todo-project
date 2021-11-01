@@ -60,7 +60,7 @@ app.get('/hello', (req, res) => { //URL 응답 테스트
 // })
 
 //서버 ,포트번호 동적으로
-app.listen(process.env.PORT || 5000,()=>{
+app.listen(process.env.PORT || 5050,()=>{
     console.log("server is running in port 5000! - nodemon")
 })
 

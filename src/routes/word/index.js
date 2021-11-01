@@ -70,10 +70,11 @@
 // // }) 
 // // module.exports = AllRouter
 // module.exports = WordRouter
-const express = require('express') 
+const express = require('express')
+const Word = require('../../models/Word')  
 const WordRouter = express.Router() 
 
-const Word = require('../../models/Word') 
+
 
 WordRouter.route('/(:word)?').get( async (req, res) => { 
     let words = [] 
@@ -170,13 +171,13 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_des: "학원은 지루하다", 
             r_pos: "포스"
         } 
-    ] 
-    // words = await Word.find() 
-    // 데이터베이스에서 전체 단어 검색 
-}catch(e){ 
-        console.log(e) 
+        ] 
+        // words = await Word.find() 
+        // 데이터베이스에서 전체 단어 검색 
+    }catch(e){ 
+            console.log(e) 
+     } 
     } 
-} 
 res.json({status: 200, words}) 
 }) 
 module.exports = WordRouter
