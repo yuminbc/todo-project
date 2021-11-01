@@ -1,7 +1,7 @@
 const express = require('express') // express.Router를 생성
 const WordRouter = express.Router() 
 const todo = require('./todo') // todo라는 하위 로직을 가져온다
-const word = require('./Word')
+const word = require('./word')
 
 WordRouter.use('/words',word)//router를 이용해서 하위폴더 하나 더 생성
 WordRouter.use('/todos',todo)
