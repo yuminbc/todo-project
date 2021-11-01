@@ -5,6 +5,6 @@ const todoSchema = mongoose.Schema({ // 스키마 정의
     email: { type: String, required: true, trim: true },
     todos: { type: array, required: true, trim: true },
 })   
-
+ 
 const User = mongoose.model('User', userSchema) // 스키마로부터 생성된 모델 객체 
 module.exports = User;

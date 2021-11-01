@@ -86,7 +86,7 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스"
         }, 
         {
             r_seq: "1", 
@@ -94,7 +94,7 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스"
         } 
     ] 
     // words = await Word.find({ r_word: word}) 
@@ -122,13 +122,13 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
     } 
 }else{ console.log(word) 
     try{ words = [
-         {
+         { 
             r_seq: "1", 
             r_word: "학원", 
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스"
         }, 
         { 
             r_seq: "1", 
@@ -136,7 +136,7 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스" 
         }, 
         { 
             r_seq: "1", 
@@ -144,7 +144,7 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스" 
         }, 
         { 
             r_seq: "1", 
@@ -152,7 +152,7 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스" 
         }, 
         { 
             r_seq: "1", 
@@ -160,7 +160,7 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스"
         }, 
         {
             r_seq: "1", 
@@ -168,7 +168,7 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
             r_link: "https//google.com", 
             r_chi: "한자", 
             r_des: "학원은 지루하다", 
-            r_pos: "포스", 
+            r_pos: "포스"
         } 
     ] 
     // words = await Word.find() 

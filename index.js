@@ -45,7 +45,7 @@ const CONNECT_URL = 'mongodb://localhost:27017/kor_dic_db'
 app.get('/hello', (req, res) => { //URL 응답 테스트
     res.send('Hello World !')
 })
-
+ 
 //id값에 따라 출력값을 다르게 할때
 // app.get('/hello/:id', (req, res) => {
 //     res.send(req.params.id)
