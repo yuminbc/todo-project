@@ -12,7 +12,7 @@ TodoRouter.route('/').get(async (req, res) => {
 //TodoRouter.get('/', (req, res) => {
 //     res.send('all todo list')
 // })
-
+ 
 TodoRouter.get('/:id', (req, res) => {
     Todo.findById(req.params.id, (err, todo) => {
         if (err) throw err;
