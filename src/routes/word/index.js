@@ -71,7 +71,7 @@
 // // module.exports = AllRouter
 // module.exports = WordRouter
 const express = require('express')
-const Word = require('../../models/Word')  
+// const Word = require('../../models/Word')  
 const WordRouter = express.Router() 
 
 
@@ -81,7 +81,8 @@ WordRouter.route('/(:word)?').get((req, res) => {
     const { word } = req.params 
     if(word !== "undefined" && word !== undefined){ 
         console.log(word) 
-        try{ words = [ 
+        try{ 
+            words = [ 
             { r_seq: "1", 
             r_word: "학원", 
             r_link: "https//google.com", 
