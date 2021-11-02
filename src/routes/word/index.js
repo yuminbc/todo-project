@@ -76,7 +76,7 @@ const WordRouter = express.Router()
 
 
 
-WordRouter.route('/(:word)?').get((req, res) => { 
+WordRouter.route('/(:word)?').get( async(req, res) => { 
     let words = [] 
     const { word } = req.params 
     if(word !== "undefined" && word !== undefined){ 
