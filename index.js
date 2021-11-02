@@ -35,6 +35,7 @@ app.use((err, req, res, next) => { //서버 내부 오류 처리
 
 // const CONNECT_URL = 'mongodb://localhost:27017/kor_dic_db'
 const CONNECT_URL='mongodb+srv://lee:1234@cluster0.wkp9e.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
+// 'mongodb+srv://lee:1234@cluster0.wkp9e.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
 mongoose.connect(CONNECT_URL, { //Momgo DB 서버연결
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -62,10 +63,10 @@ app.get('/hello', (req, res) => { //URL 응답 테스트
 
 //서버 ,포트번호 동적으로
 app.listen(process.env.PORT || 5050,()=>{
-    console.log("server is running in port 5000! - nodemon")
+    console.log("server is running in port 5050! - nodemon")
 })
 
-
+ 
 
 // const points = [3, 4];
 // const app = {}
