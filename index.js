@@ -27,7 +27,7 @@ app.use((req, res, next) => {
     res.status(404).send("Sorry can't find page")
 })// 사용자가 요청한 페이지가 없는 경우 에러처리 
 
-
+ 
 app.use((err, req, res, next) => { //서버 내부 오류 처리
     console.error(err.stack)
     res.status(500).send("something is broken on server !")

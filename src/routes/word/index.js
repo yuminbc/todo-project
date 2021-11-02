@@ -4,7 +4,7 @@
 // const AllRouter = express.Router()
 
 // const word = require('../../models/Word') // word 가져옴
- 
+  
 // //처리로직
 // // /api/word/ , /api/words/학원 //(파라미터)
 // WordRouter.route('/(:word)?').get(async(req, res) => {

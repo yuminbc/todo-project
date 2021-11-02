@@ -26,4 +26,4 @@ WordRouter.use('/todos',todo)
 // })    // /api/words/     , /api/words/학원
 // // ()? 는 옵션주는 기능
 
-module.exports = WordRouter 
+module.exports = WordRouter  
