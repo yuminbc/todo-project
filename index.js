@@ -65,8 +65,8 @@ app.get('/hello', (req, res) => { //URL 응답 테스트
 app.listen(process.env.PORT || 5050,()=>{
     console.log("server is running in port 5050! - nodemon")
 })
-
  
+  
 
 // const points = [3, 4];
 // const app = {}

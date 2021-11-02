@@ -11,7 +11,7 @@ TodoRouter.route('/').get(async (req, res) => {
 // 위아래 코드 같은 것!!!
 //TodoRouter.get('/', (req, res) => {
 //     res.send('all todo list') 
-// })
+// }) 
  
 TodoRouter.get('/:id', (req, res) => {
     Todo.findById(req.params.id, (err, todo) => {
