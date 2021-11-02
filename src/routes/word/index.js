@@ -112,7 +112,7 @@ WordRouter.route('/(:word)?').get((req, res) => {
         // {r_word: {$regex: `${word}`}}, 
         // {r_des: {$regex: `${word}`}} 
         // ]}) 
-        words = await Word.find({ $or: [ 
+        words = Word.find({ $or: [ 
             // Word 모델의 r_word 필드와 r_des 필드에서 쿼리를 포함하는 단어 검색후 최신순으로 정렬하고 3개만 가져오기
             {r_word: {$regex: `${word}`}}, 
             {r_des: {$regex: `${word}`}} 
@@ -174,7 +174,7 @@ WordRouter.route('/(:word)?').get((req, res) => {
     //         r_pos: "포스"
     //     } 
     //     ] 
-        words = await Word.find() 
+        words = Word.find() 
         // 데이터베이스에서 전체 단어 검색 
     }catch(e){ 
             console.log(e) 
